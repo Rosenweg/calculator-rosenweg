@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">Lommeregner</string>
+    <string name="app_launcher_name">Rosenweg Lommeregner</string>
     <string name="scientific_calculator">Videnskabelig lommeregner</string>
     <string name="formula_divide_by_zero_error">Fejl: division med nul</string>
     <string name="history">Historik</string>

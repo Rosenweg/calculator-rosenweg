@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">Αριθμομηχανή</string>
+    <string name="app_launcher_name">Rosenweg Αριθμομηχανή</string>
     <string name="scientific_calculator">Επιστημονική Αριθμομηχανή</string>
     <string name="unit_converter">Μετατροπέας μονάδων</string>
     <string name="swap_units">Εναλλαγή μονάδων</string>

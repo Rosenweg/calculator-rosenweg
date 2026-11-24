@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">Máy tính</string>
+    <string name="app_launcher_name">Rosenweg Máy tính</string>
     <string name="unit_area_square_meter">Mét vuông</string>
     <string name="unit_area_square_foot">Phút vuông</string>
     <string name="unit_volume_cubic_millimeter">Milimét khối</string>

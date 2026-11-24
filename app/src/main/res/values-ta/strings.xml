@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">கால்குலேட்டர்</string>
+    <string name="app_launcher_name">Rosenweg கால்குலேட்டர்</string>
     <string name="scientific_calculator">அறிவியல் கால்குலேட்டர்</string>
     <string name="formula_divide_by_zero_error">பிழை: பூஜ்ஜியத்தால் வகுத்தல்</string>
     <string name="history">வரலாறு</string>

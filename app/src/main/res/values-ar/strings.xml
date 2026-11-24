@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">الحاسبة</string>
+    <string name="app_launcher_name">Rosenweg الحاسبة</string>
     <string name="scientific_calculator">الحاسبة العلمية</string>
     <string name="unit_converter">محول الوحدة</string>
     <string name="swap_units">تبديل الوحدات</string>

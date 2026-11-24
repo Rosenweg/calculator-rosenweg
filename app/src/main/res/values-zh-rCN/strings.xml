@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">计算器</string>
+    <string name="app_launcher_name">Rosenweg 计算器</string>
     <string name="scientific_calculator">科学计算器</string>
     <string name="unit_converter">单位换算</string>
     <string name="swap_units">交换单位</string>

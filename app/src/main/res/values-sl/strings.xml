@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">Kalkulator</string>
+    <string name="app_launcher_name">Rosenweg Kalkulator</string>
     <string name="scientific_calculator">Znanstveni kalkulator</string>
     <string name="formula_divide_by_zero_error">Napaka: deljenje z ničlo</string>
     <string name="history">Zgodovina</string>

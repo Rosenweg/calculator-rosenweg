@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">Kalkulilo</string>
+    <string name="app_launcher_name">Rosenweg Kalkulilo</string>
     <string name="scientific_calculator">Scienca kalkulilo</string>
     <string name="formula_divide_by_zero_error">Eraro: divido per nul</string>
     <string name="vibrate_on_button_press">Vibrigi je butonpremo</string>

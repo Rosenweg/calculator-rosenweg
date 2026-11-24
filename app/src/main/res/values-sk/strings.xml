@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">Kalkulačka</string>
+    <string name="app_launcher_name">Rosenweg Kalkulačka</string>
     <string name="scientific_calculator">Vedecká kalkulačka</string>
     <string name="unit_converter">Prevodník jednotiek</string>
     <string name="swap_units">Vymeniť jednotky</string>

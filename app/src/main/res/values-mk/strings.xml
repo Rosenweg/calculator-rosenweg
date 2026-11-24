@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">Калкулатор</string>
+    <string name="app_launcher_name">Rosenweg Калкулатор</string>
     <string name="scientific_calculator">Научен калкулатор</string>
     <string name="formula_divide_by_zero_error">Грешка: поделба по нула</string>
     <string name="history">Историја</string>
