@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">Calculatrice</string>
+    <string name="app_launcher_name">Rosenweg Calculatrice</string>
     <string name="scientific_calculator">Calculatrice scientifique</string>
     <string name="unit_converter">Convertisseur d\'unités</string>
     <string name="swap_units">Inverser les unités</string>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">Калькулятар</string>
+    <string name="app_launcher_name">Rosenweg Калькулятар</string>
     <string name="scientific_calculator">Навуковы калькулятар</string>
     <string name="unit_converter">Канвэртар адзінак</string>
     <string name="swap_units">Памяняць месцамі</string>

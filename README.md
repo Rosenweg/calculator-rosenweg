@@ -1,48 +1,42 @@
-# Fossify Calculator
+# Rosenweg Rechner
 
-<img alt="Logo" src="graphics/icon.webp" width="120" /> 
+Taschenrechner für die Smartphones der Siedlung Rosenweg in Kaiseraugst. Funktional ist es der Rechner von Fossify; angepasst sind Name, Paketname, das Rosenweg-Logo und das Verhalten auf den geteilten Rosenweg-Telefonen. Spenden-, Store- und Rückmeldekanäle des Originals sind entfernt.
 
-<a href='https://play.google.com/store/apps/details?id=org.fossify.math'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' height=80/><a href="https://f-droid.org/packages/org.fossify.math/"><img src="https://fdroid.gitlab.io/artwork/badge/get-it-on-en.svg" alt="Get it on F-Droid" height=80/></a> <a href="https://apt.izzysoft.de/fdroid/index/apk/org.fossify.math"><img src="https://gitlab.com/IzzyOnDroid/repo/-/raw/master/assets/IzzyOnDroid.png" alt="Get it on IzzyOnDroid" height=80/></a>
+## Im Rosenweg
 
-Introducing Fossify Calculator – your versatile and efficient tool for all your calculation needs. Enjoy a stylish, modern design paired with powerful
-functionality, perfect for both simple calculations and more complex tasks.
+- **Einstellungen pro Person:** Auf geteilten Telefonen gehören die Einstellungen der angemeldeten Person. Sie liegen (über Rosenweg Gerät) auf der Telefonanlage und sind nach dem Anmelden an jedem geteilten Telefon wieder da. Ohne Rosenweg Gerät bleiben sie wie gewohnt auf dem Handy.
+- **Rosenweg Updater:** Auf Handys ohne Rosenweg Gerät prüft die App den App-Katalog der Telefonanlage und bietet Aktualisierungen für alle installierten Rosenweg-Apps an. Jede APK wird vorher geprüft (Prüfsumme, Paketname, Version, Rosenweg-Signatur); Android lässt jede Installation bestätigen. Auf geteilten Telefonen übernimmt das Rosenweg Gerät.
+- **Logo:** Rosenweg-Wappen (Turm, Weg, Rose auf Rot) mit dem Zeichen der App rechts unten, erzeugt mit dem Logo-Baukasten aus rosenweg-basis; dazu ein monochromes Designsymbol (Android 13+). Die wählbaren Symbolfarben von Fossify gibt es nicht mehr: alle zeigen dasselbe Rosenweg-Symbol.
 
-**📶 OFFLINE FUNCTIONALITY:**    
-Fossify Calculator operates entirely offline without needing internet permissions. Use it anytime, anywhere, and experience enhanced privacy, security, and
-stability.
+## Installation
 
-**🌐 MULTIPLE FUNCTIONS:**    
-Whether you need to multiply, divide, or calculate roots and powers, Fossify Calculator has got you covered. It's perfect for everyday calculations and more
-specialized tasks like mortgage calculations.
+- **Geteilte Rosenweg-Telefone:** Rosenweg Gerät installiert die App automatisch aus dem App-Katalog der Telefonanlage und hält sie aktuell.
+- **Eigenes Handy:** APK von [www.rosenweg4303.ch/apps](https://www.rosenweg4303.ch/apps) herunterladen und installieren. Danach hält der Rosenweg Updater die Rosenweg-Apps aktuell.
 
-**📳 CUSTOMIZABLE SETTINGS:**    
-Tailor your experience with customizable settings. Toggle vibrations on button presses, prevent your phone from sleeping while using the app, and adjust the
-interface to your liking.
+Die App gibt es nicht im Play Store und nicht auf F-Droid. Sie ist mit dem Rosenweg-Schlüssel signiert; Fassungen anderer Herkunft lassen sich nicht darüber installieren.
 
-**🔒 PRIVACY AND SECURITY:**    
-Your privacy is paramount. Fossify Calculator does not collect or share any user information with third parties. Use the app with peace of mind, knowing your
-data is secure.
+## Bauen
 
-**📊 OPERATIONS HISTORY:**    
-Access a history of your calculations for quick reference. Easily browse through recent operations to review or continue your work.
+Die App baut gegen den Rosenweg-Fork der Fossify Commons und die Rosenweg-Module `cloud`/`updater` (`ch.rosenweg4303:*`). Diese kommen aus dem lokalen Maven-Repository (`mavenLocal()`), also zuerst [commons-rosenweg](https://github.com/Rosenweg/commons-rosenweg) veröffentlichen:
 
-**🎨 PERSONALIZED EXPERIENCE:**    
-Personalize your calculator with customizable colors. Adjust text and background colors to match your style and preferences, creating a visually appealing and
-easy-to-use interface.
+```bash
+# in commons-rosenweg, Zweig rosenweg
+./gradlew -PVERSION=7.1.3-rosenweg.1 publishToMavenLocal
 
-**🌐 OPEN-SOURCE TRANSPARENCY:**    
-Fossify Calculator is fully open-source, offering transparency and security. Access the source code for audits, ensuring a trustworthy and reliable tool.
+# in diesem Repo, Zweig rosenweg
+./gradlew assembleFossRelease
+```
 
-Experience a new level of efficiency and customization with Fossify Calculator. Download now and elevate your calculation experience.
+Die APK liegt danach unter `app/build/outputs/apk/foss/release/`. Signiert wird mit `keystore.properties` (Vorlage: `keystore.properties_sample`); die Datei und der Schlüssel liegen nicht im Repo. Paketname: `ch.rosenweg4303.math`.
 
-➡️ Explore more Fossify apps: https://www.fossify.org    
-➡️ Open-Source Code: https://www.github.com/FossifyOrg    
-➡️ Join the community on Reddit: https://www.reddit.com/r/Fossify    
-➡️ Connect on Telegram: https://t.me/Fossify
+Logo neu erzeugen (aus dem Repo-Wurzelverzeichnis, rosenweg-basis daneben): `sh assets/logo/erzeugen.sh`. Welches Zeichen die App trägt, steht in rosenweg-basis `werkzeug/logo/android-apps.txt`.
 
-<div align="center">
-<img alt="App image" src="fastlane/metadata/android/en-US/images/phoneScreenshots/1_en-US.png" width="30%">
-<img alt="App image" src="fastlane/metadata/android/en-US/images/phoneScreenshots/2_en-US.png" width="30%">
-<img alt="App image" src="fastlane/metadata/android/en-US/images/phoneScreenshots/3_en-US.png" width="30%">
-</div>
+## Neue Version
 
+APK wie oben bauen und signieren, dann `gh release create v<versionName> <datei.apk> --notes "Was ist neu"` (Tag = versionName der APK, eine APK je Release). Der Workflow `.github/workflows/apps.yml` (wiederverwendbarer Workflow `apps-release.yml` aus Rosenweg/Website) schickt sie an [www.rosenweg4303.ch/apps](https://www.rosenweg4303.ch/apps) und in den App-Katalog der Telefonanlage; damit bekommen sie die geteilten Telefone und der Rosenweg Updater. Anmeldung per GitHub-OIDC, kein gespeichertes Geheimnis; die Anlage prüft Tag, Prüfsumme, Rosenweg-Signatur und Paketnamen. Der Workflow liegt im Standardzweig `main`; `gh release create` ohne `--target` setzt den Tag dort hin. Erneut senden: `gh workflow run apps.yml --ref <tag>`.
+
+## Herkunft und Lizenz
+
+Fork von [Fossify Calculator](https://github.com/FossifyOrg/Calculator). Der Zweig `main` folgt dem Original, die Rosenweg-Anpassungen liegen im Zweig `rosenweg`. Herzlichen Dank an das Fossify-Team und alle Mitwirkenden für die solide Grundlage.
+
+Lizenz: GNU General Public License v3.0, siehe [LICENSE](LICENSE).

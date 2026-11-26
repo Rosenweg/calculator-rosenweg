@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">کیلکولیٹر</string>
+    <string name="app_launcher_name">Rosenweg کیلکولیٹر</string>
     <string name="scientific_calculator">وگیانک کیلکولیٹر</string>
     <string name="formula_divide_by_zero_error">غلطی آئی اے، صفر نال ونڈ</string>
     <string name="history">تریخ</string>

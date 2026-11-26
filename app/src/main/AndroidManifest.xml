@@ -15,6 +15,12 @@
         android:name="android.hardware.faketouch"
         android:required="false" />
 
+    <!-- Rosenweg: Einstellungen pro Person ueber die Geraete-App (AnlageProvider) -->
+    <uses-permission android:name="ch.rosenweg4303.permission.ANLAGE" />
+    <queries>
+        <provider android:authorities="ch.rosenweg4303.telefon.anlage" />
+    </queries>
+
     <application
         android:name="org.fossify.commons.FossifyApp"
         android:allowBackup="true"
@@ -103,8 +109,8 @@
             android:name="org.fossify.math.activities.SplashActivity.Red"
             android:enabled="false"
             android:exported="true"
-            android:icon="@mipmap/ic_launcher_red"
-            android:roundIcon="@mipmap/ic_launcher_red"
+            android:icon="@mipmap/ic_launcher"
+            android:roundIcon="@mipmap/ic_launcher"
             android:targetActivity="org.fossify.math.activities.SplashActivity">
 
             <intent-filter>
@@ -117,8 +123,8 @@
             android:name="org.fossify.math.activities.SplashActivity.Pink"
             android:enabled="false"
             android:exported="true"
-            android:icon="@mipmap/ic_launcher_pink"
-            android:roundIcon="@mipmap/ic_launcher_pink"
+            android:icon="@mipmap/ic_launcher"
+            android:roundIcon="@mipmap/ic_launcher"
             android:targetActivity="org.fossify.math.activities.SplashActivity">
 
             <intent-filter>
@@ -131,8 +137,8 @@
             android:name="org.fossify.math.activities.SplashActivity.Purple"
             android:enabled="false"
             android:exported="true"
-            android:icon="@mipmap/ic_launcher_purple"
-            android:roundIcon="@mipmap/ic_launcher_purple"
+            android:icon="@mipmap/ic_launcher"
+            android:roundIcon="@mipmap/ic_launcher"
             android:targetActivity="org.fossify.math.activities.SplashActivity">
 
             <intent-filter>
@@ -145,8 +151,8 @@
             android:name="org.fossify.math.activities.SplashActivity.Deep_purple"
             android:enabled="false"
             android:exported="true"
-            android:icon="@mipmap/ic_launcher_deep_purple"
-            android:roundIcon="@mipmap/ic_launcher_deep_purple"
+            android:icon="@mipmap/ic_launcher"
+            android:roundIcon="@mipmap/ic_launcher"
             android:targetActivity="org.fossify.math.activities.SplashActivity">
 
             <intent-filter>
@@ -159,8 +165,8 @@
             android:name="org.fossify.math.activities.SplashActivity.Indigo"
             android:enabled="false"
             android:exported="true"
-            android:icon="@mipmap/ic_launcher_indigo"
-            android:roundIcon="@mipmap/ic_launcher_indigo"
+            android:icon="@mipmap/ic_launcher"
+            android:roundIcon="@mipmap/ic_launcher"
             android:targetActivity="org.fossify.math.activities.SplashActivity">
 
             <intent-filter>
@@ -173,8 +179,8 @@
             android:name="org.fossify.math.activities.SplashActivity.Blue"
             android:enabled="false"
             android:exported="true"
-            android:icon="@mipmap/ic_launcher_blue"
-            android:roundIcon="@mipmap/ic_launcher_blue"
+            android:icon="@mipmap/ic_launcher"
+            android:roundIcon="@mipmap/ic_launcher"
             android:targetActivity="org.fossify.math.activities.SplashActivity">
 
             <intent-filter>
@@ -187,8 +193,8 @@
             android:name="org.fossify.math.activities.SplashActivity.Light_blue"
             android:enabled="false"
             android:exported="true"
-            android:icon="@mipmap/ic_launcher_light_blue"
-            android:roundIcon="@mipmap/ic_launcher_light_blue"
+            android:icon="@mipmap/ic_launcher"
+            android:roundIcon="@mipmap/ic_launcher"
             android:targetActivity="org.fossify.math.activities.SplashActivity">
 
             <intent-filter>
@@ -201,8 +207,8 @@
             android:name="org.fossify.math.activities.SplashActivity.Cyan"
             android:enabled="false"
             android:exported="true"
-            android:icon="@mipmap/ic_launcher_cyan"
-            android:roundIcon="@mipmap/ic_launcher_cyan"
+            android:icon="@mipmap/ic_launcher"
+            android:roundIcon="@mipmap/ic_launcher"
             android:targetActivity="org.fossify.math.activities.SplashActivity">
 
             <intent-filter>
@@ -215,8 +221,8 @@
             android:name="org.fossify.math.activities.SplashActivity.Teal"
             android:enabled="false"
             android:exported="true"
-            android:icon="@mipmap/ic_launcher_teal"
-            android:roundIcon="@mipmap/ic_launcher_teal"
+            android:icon="@mipmap/ic_launcher"
+            android:roundIcon="@mipmap/ic_launcher"
             android:targetActivity="org.fossify.math.activities.SplashActivity">
 
             <intent-filter>
@@ -243,8 +249,8 @@
             android:name="org.fossify.math.activities.SplashActivity.Light_green"
             android:enabled="false"
             android:exported="true"
-            android:icon="@mipmap/ic_launcher_light_green"
-            android:roundIcon="@mipmap/ic_launcher_light_green"
+            android:icon="@mipmap/ic_launcher"
+            android:roundIcon="@mipmap/ic_launcher"
             android:targetActivity="org.fossify.math.activities.SplashActivity">
 
             <intent-filter>
@@ -257,8 +263,8 @@
             android:name="org.fossify.math.activities.SplashActivity.Lime"
             android:enabled="false"
             android:exported="true"
-            android:icon="@mipmap/ic_launcher_lime"
-            android:roundIcon="@mipmap/ic_launcher_lime"
+            android:icon="@mipmap/ic_launcher"
+            android:roundIcon="@mipmap/ic_launcher"
             android:targetActivity="org.fossify.math.activities.SplashActivity">
 
             <intent-filter>
@@ -271,8 +277,8 @@
             android:name="org.fossify.math.activities.SplashActivity.Yellow"
             android:enabled="false"
             android:exported="true"
-            android:icon="@mipmap/ic_launcher_yellow"
-            android:roundIcon="@mipmap/ic_launcher_yellow"
+            android:icon="@mipmap/ic_launcher"
+            android:roundIcon="@mipmap/ic_launcher"
             android:targetActivity="org.fossify.math.activities.SplashActivity">
 
             <intent-filter>
@@ -285,8 +291,8 @@
             android:name="org.fossify.math.activities.SplashActivity.Amber"
             android:enabled="false"
             android:exported="true"
-            android:icon="@mipmap/ic_launcher_amber"
-            android:roundIcon="@mipmap/ic_launcher_amber"
+            android:icon="@mipmap/ic_launcher"
+            android:roundIcon="@mipmap/ic_launcher"
             android:targetActivity="org.fossify.math.activities.SplashActivity">
 
             <intent-filter>
@@ -299,8 +305,8 @@
             android:name="org.fossify.math.activities.SplashActivity.Orange"
             android:enabled="false"
             android:exported="true"
-            android:icon="@mipmap/ic_launcher_orange"
-            android:roundIcon="@mipmap/ic_launcher_orange"
+            android:icon="@mipmap/ic_launcher"
+            android:roundIcon="@mipmap/ic_launcher"
             android:targetActivity="org.fossify.math.activities.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -312,8 +318,8 @@
             android:name="org.fossify.math.activities.SplashActivity.Deep_orange"
             android:enabled="false"
             android:exported="true"
-            android:icon="@mipmap/ic_launcher_deep_orange"
-            android:roundIcon="@mipmap/ic_launcher_deep_orange"
+            android:icon="@mipmap/ic_launcher"
+            android:roundIcon="@mipmap/ic_launcher"
             android:targetActivity="org.fossify.math.activities.SplashActivity">
 
             <intent-filter>
@@ -326,8 +332,8 @@
             android:name="org.fossify.math.activities.SplashActivity.Brown"
             android:enabled="false"
             android:exported="true"
-            android:icon="@mipmap/ic_launcher_brown"
-            android:roundIcon="@mipmap/ic_launcher_brown"
+            android:icon="@mipmap/ic_launcher"
+            android:roundIcon="@mipmap/ic_launcher"
             android:targetActivity="org.fossify.math.activities.SplashActivity">
 
             <intent-filter>
@@ -340,8 +346,8 @@
             android:name="org.fossify.math.activities.SplashActivity.Blue_grey"
             android:enabled="false"
             android:exported="true"
-            android:icon="@mipmap/ic_launcher_blue_grey"
-            android:roundIcon="@mipmap/ic_launcher_blue_grey"
+            android:icon="@mipmap/ic_launcher"
+            android:roundIcon="@mipmap/ic_launcher"
             android:targetActivity="org.fossify.math.activities.SplashActivity">
 
             <intent-filter>
@@ -354,8 +360,8 @@
             android:name="org.fossify.math.activities.SplashActivity.Grey_black"
             android:enabled="false"
             android:exported="true"
-            android:icon="@mipmap/ic_launcher_grey_black"
-            android:roundIcon="@mipmap/ic_launcher_grey_black"
+            android:icon="@mipmap/ic_launcher"
+            android:roundIcon="@mipmap/ic_launcher"
             android:targetActivity="org.fossify.math.activities.SplashActivity">
 
             <intent-filter>
@@ -363,5 +369,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity-alias>
+        <!-- Rosenweg: Anmeldung am geteilten Telefon (nur Rosenweg-Signatur) -->
+        <receiver
+            android:name=".helpers.AnlageEinstellungen$Empfaenger"
+            android:exported="true"
+            android:permission="ch.rosenweg4303.permission.ANLAGE">
+            <intent-filter>
+                <action android:name="ch.rosenweg4303.ANGEMELDET" />
+            </intent-filter>
+        </receiver>
     </application>
 </manifest>

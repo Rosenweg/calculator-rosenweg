@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">Calculadora</string>
+    <string name="app_launcher_name">Rosenweg Calculadora</string>
     <string name="scientific_calculator">Calculadora Científica</string>
     <string name="formula_divide_by_zero_error">Erro: división por cero</string>
     <string name="history">Rexistro</string>

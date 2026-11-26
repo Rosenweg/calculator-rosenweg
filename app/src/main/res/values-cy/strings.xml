@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">Cyfrifiannell</string>
+    <string name="app_launcher_name">Rosenweg Cyfrifiannell</string>
     <string name="scientific_calculator">Cyfrifiannell Gwyddonol</string>
     <string name="formula_divide_by_zero_error">Gwall: rhannu â sero</string>
     <string name="history">Hanes</string>

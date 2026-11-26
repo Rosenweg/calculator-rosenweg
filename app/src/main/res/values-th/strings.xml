@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="vibrate_on_button_press">สั่นเมื่อกดปุ่ม</string>
-    <string name="app_launcher_name">เครื่องคิดเลข</string>
+    <string name="app_launcher_name">Rosenweg เครื่องคิดเลข</string>
     <string name="scientific_calculator">เครื่องคิดเลขวิทยาศาสตร์</string>
     <string name="unit_converter">การแปลงหน่วย</string>
     <string name="swap_units">สลับหน่วย</string>

@@ -139,7 +139,8 @@ android {
         }
     }
 
-    namespace = project.property("APP_ID").toString()
+    // Rosenweg: nur die applicationId ist eigen (ch.rosenweg4303.math); Kotlin-Namensraum wie im Original.
+    namespace = "org.fossify.math"
 }
 
 detekt {
@@ -150,6 +151,8 @@ detekt {
 }
 
 dependencies {
+    // Rosenweg Updater (ohne Geraet: alle Rosenweg-Apps aus dem Katalog der Anlage aktuell halten)
+    implementation("ch.rosenweg4303:updater:0.1.2")
     implementation(libs.fossify.commons)
     implementation(libs.auto.fit.text.view)
     implementation(libs.evalex)

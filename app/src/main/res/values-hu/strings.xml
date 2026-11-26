@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">Számológép</string>
+    <string name="app_launcher_name">Rosenweg Számológép</string>
     <string name="scientific_calculator">Tudományos Számológép</string>
     <string name="unit_converter">Mértékegységváltó</string>
     <string name="swap_units">Mértékegységek felcserélése</string>

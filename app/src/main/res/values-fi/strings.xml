@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">Laskin</string>
+    <string name="app_launcher_name">Rosenweg Laskin</string>
     <string name="scientific_calculator">Funktiolaskin</string>
     <string name="formula_divide_by_zero_error">Virhe: jako nollalla</string>
     <string name="history">Historia</string>
