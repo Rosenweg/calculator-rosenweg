@@ -32,7 +32,8 @@ internal fun SettingsScreen(
     onUseEnglishPress: (Boolean) -> Unit,
     onSetupLanguagePress: () -> Unit,
     showCheckmarksOnSwitches: Boolean,
-    displayLanguage: String
+    displayLanguage: String,
+    nachUpdatesSuchen: () -> Unit = {},
 ) {
     SimpleColumnScaffold(
         title = stringResource(id = org.fossify.commons.R.string.settings),
@@ -51,6 +52,12 @@ internal fun SettingsScreen(
             SettingsPreferenceComponent(
                 label = stringResource(id = org.fossify.commons.R.string.customize_widget_colors),
                 doOnPreferenceClick = customizeWidgetColors
+            )
+            // Rosenweg Updater: sofort pruefen (RosenwegUpdater.jetztPruefen)
+            SettingsPreferenceComponent(
+                label = stringResource(id = ch.rosenweg4303.updater.R.string.rosenweg_nach_updates_suchen),
+                value = stringResource(id = ch.rosenweg4303.updater.R.string.rosenweg_nach_updates_suchen_text),
+                doOnPreferenceClick = nachUpdatesSuchen
             )
         }
         HorizontalDivider(color = divider_grey)

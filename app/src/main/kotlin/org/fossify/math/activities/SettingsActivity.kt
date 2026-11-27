@@ -67,6 +67,7 @@ class SettingsActivity : AppCompatActivity() {
                     },
                     onSetupLanguagePress = ::launchChangeAppLanguageIntent,
                     showCheckmarksOnSwitches = showCheckmarksOnSwitches,
+                    nachUpdatesSuchen = { ch.rosenweg4303.updater.RosenwegUpdater.jetztPruefen(this) },
                 )
             }
         }
