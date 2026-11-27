@@ -152,7 +152,7 @@ detekt {
 
 dependencies {
     // Rosenweg Updater (ohne Geraet: alle Rosenweg-Apps aus dem Katalog der Anlage aktuell halten)
-    implementation("ch.rosenweg4303:updater:0.1.7")
+    implementation("ch.rosenweg4303:updater:0.1.8")
     implementation(libs.fossify.commons)
     implementation(libs.auto.fit.text.view)
     implementation(libs.evalex)
